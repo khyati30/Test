@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<head>
+<title>
+Login 
+</title>
+  <h1 align="center">Login</h1>
+</head>
 
-You can use the [editor on GitHub](https://github.com/khyati30/Test/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.uid.value == "abc" && form.pwd.value == "xyz")
+  {
+    window.open('next.html')
+  }
+ else
+ {
+   alert("Wrong username and password")
+  }
+}
+</script>  
+  
+<body>
+<h1 style="font-family:verdana; text-align="center";font-size:18pt; color:#0FFF00;> </h1>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<form method="post" name="login">
+  
+Username : <input type="text" name="uid"/>
+Password : <input type="password" name="pwd"/>
 
-### Markdown
+<input type="button" onclick="check(this.form)" value="Login"/>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+</form>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/khyati30/Test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
